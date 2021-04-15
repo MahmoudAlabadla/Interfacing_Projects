@@ -1,0 +1,10 @@
+21:57:51 **** Incremental Build of configuration Debug for project Showing_Current_Modes_Gamea ****
+make all 
+Building target: Showing_Current_Modes_Gamea.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Showing_Current_Modes_Gamea.map -mmcu=atmega32 -o "Showing_Current_Modes_Gamea.elf"  ./LCD.o ./main.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [Showing_Current_Modes_Gamea.elf] Error 1
+
+21:57:52 Build Finished (took 471ms)
+

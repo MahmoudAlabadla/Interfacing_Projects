@@ -1,0 +1,20 @@
+06:19:37 **** Incremental Build of configuration Debug for project SPI_Driver ****
+make all 
+Building file: ../Dio_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Dio_Prog.d" -MT"Dio_Prog.o" -c -o "Dio_Prog.o" "../Dio_Prog.c"
+Finished building: ../Dio_Prog.c
+ 
+Building file: ../SPI_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"SPI_Prog.d" -MT"SPI_Prog.o" -c -o "SPI_Prog.o" "../SPI_Prog.c"
+Finished building: ../SPI_Prog.c
+ 
+Building target: SPI_Driver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_Driver.map -mmcu=atmega32 -o "SPI_Driver.elf"  ./Dio_Prog.o ./SPI_Prog.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [SPI_Driver.elf] Error 1
+
+06:19:42 Build Finished (took 5s.407ms)
+

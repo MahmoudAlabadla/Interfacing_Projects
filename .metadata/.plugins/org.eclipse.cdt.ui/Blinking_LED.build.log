@@ -1,0 +1,20 @@
+20:57:17 **** Incremental Build of configuration Debug for project Blinking_LED ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Blinking_LED.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3782 bytes (11.5% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+20:57:18 Build Finished (took 665ms)
+

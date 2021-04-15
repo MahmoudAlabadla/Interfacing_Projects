@@ -1,0 +1,43 @@
+21:20:41 **** Incremental Build of configuration Debug for project RTOS_Blinking_LEDS ****
+make all 
+Building file: ../Internal_Timer_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Internal_Timer_prog.d" -MT"Internal_Timer_prog.o" -c -o "Internal_Timer_prog.o" "../Internal_Timer_prog.c"
+Finished building: ../Internal_Timer_prog.c
+ 
+Building file: ../OS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"OS.d" -MT"OS.o" -c -o "OS.o" "../OS.c"
+Finished building: ../OS.c
+ 
+Building target: RTOS_Blinking_LEDS.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,RTOS_Blinking_LEDS.map -mmcu=atmega32 -o "RTOS_Blinking_LEDS.elf"  ./Dio_Prog.o ./Internal_Timer_prog.o ./OS.o ./main.o   
+Finished building target: RTOS_Blinking_LEDS.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S RTOS_Blinking_LEDS.elf  >"RTOS_Blinking_LEDS.lss"
+Finished building: RTOS_Blinking_LEDS.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex RTOS_Blinking_LEDS.elf  "RTOS_Blinking_LEDS.hex"
+Finished building: RTOS_Blinking_LEDS.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 RTOS_Blinking_LEDS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2082 bytes (6.4% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:20:43 Build Finished (took 1s.604ms)
+

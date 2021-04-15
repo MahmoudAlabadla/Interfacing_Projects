@@ -1,0 +1,10 @@
+18:26:36 **** Incremental Build of configuration Debug for project Update_Dio_prog ****
+make all 
+Building target: Update_Dio_prog.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Update_Dio_prog.map -mmcu=atmega32 -o "Update_Dio_prog.elf"  ./Dio_Prog.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [Update_Dio_prog.elf] Error 1
+
+18:26:37 Build Finished (took 479ms)
+

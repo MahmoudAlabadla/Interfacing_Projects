@@ -1,0 +1,16 @@
+02:18:26 **** Incremental Build of configuration Debug for project ECU1 ****
+make all 
+Building target: ECU1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ECU1.map -mmcu=atmega32 -o "ECU1.elf"  ./SPI_Prog.o ./Terminal.o ./UART__Prog.o ./main.o   
+./SPI_Prog.o: In function `SPI_MasterInit':
+../SPI_Prog.c:19: undefined reference to `Dio_SetPinDirection'
+../SPI_Prog.c:20: undefined reference to `Dio_SetPinDirection'
+../SPI_Prog.c:21: undefined reference to `Dio_SetPinDirection'
+../SPI_Prog.c:22: undefined reference to `Dio_SetPinDirection'
+../SPI_Prog.c:19: undefined reference to `Dio_SetPinDirection'
+./SPI_Prog.o:../SPI_Prog.c:20: more undefined references to `Dio_SetPinDirection' follow
+make: *** [ECU1.elf] Error 1
+
+02:18:27 Build Finished (took 1s.239ms)
+

@@ -1,0 +1,44 @@
+23:10:54 **** Build of configuration Debug for project UART_SPI_Bluetooth ****
+make all 
+Building file: ../UART__Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"UART__Prog.d" -MT"UART__Prog.o" -c -o "UART__Prog.o" "../UART__Prog.c"
+Finished building: ../UART__Prog.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:17: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: UART_SPI_Bluetooth.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_SPI_Bluetooth.map -mmcu=atmega32 -o "UART_SPI_Bluetooth.elf"  ./Dio_Prog.o ./SPI_Prog.o ./UART__Prog.o ./main.o   
+Finished building target: UART_SPI_Bluetooth.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_SPI_Bluetooth.elf  >"UART_SPI_Bluetooth.lss"
+Finished building: UART_SPI_Bluetooth.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_SPI_Bluetooth.elf  "UART_SPI_Bluetooth.hex"
+Finished building: UART_SPI_Bluetooth.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_SPI_Bluetooth.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1928 bytes (5.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+23:11:03 Build Finished (took 8s.522ms)
+

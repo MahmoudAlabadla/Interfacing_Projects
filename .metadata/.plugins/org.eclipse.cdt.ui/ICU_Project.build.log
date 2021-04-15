@@ -1,0 +1,48 @@
+20:30:36 **** Incremental Build of configuration Debug for project ICU_Project ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:21: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:35: warning: large integer implicitly truncated to unsigned type
+../main.c:29: warning: unused variable 'Cycle_Sign'
+../main.c:28: warning: unused variable 'Duty_Cycle'
+../main.c:27: warning: unused variable 'Freq_Sign'
+../main.c:26: warning: unused variable 'Frequency'
+../main.c:24: warning: unused variable 'LineTwo'
+../main.c:23: warning: unused variable 'LineOne'
+Finished building: ../main.c
+ 
+Building target: ICU_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ICU_Project.map -mmcu=atmega16 -o "ICU_Project.elf"  ./ADC_prog.o ./Dio_Prog.o ./LCD_Prog.o ./PWM_FM_prog.o ./T1_ICU_prog.o ./main.o   
+Finished building target: ICU_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ICU_Project.elf  >"ICU_Project.lss"
+Finished building: ICU_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 ICU_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8284 bytes (50.6% Full)
+(.text + .data + .bootloader)
+
+Data:         54 bytes (5.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+20:30:38 Build Finished (took 2s.160ms)
+

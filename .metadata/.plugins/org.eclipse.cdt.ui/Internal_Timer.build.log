@@ -1,0 +1,38 @@
+21:56:36 **** Incremental Build of configuration Debug for project Internal_Timer ****
+make all 
+Building file: ../Internal_Timer_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Internal_Timer_prog.d" -MT"Internal_Timer_prog.o" -c -o "Internal_Timer_prog.o" "../Internal_Timer_prog.c"
+Finished building: ../Internal_Timer_prog.c
+ 
+Building target: Internal_Timer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Internal_Timer.map -mmcu=atmega32 -o "Internal_Timer.elf"  ./Dio_Prog.o ./Internal_Timer_prog.o ./main.o   
+Finished building target: Internal_Timer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Internal_Timer.elf  >"Internal_Timer.lss"
+Finished building: Internal_Timer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Internal_Timer.elf  "Internal_Timer.hex"
+Finished building: Internal_Timer.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Internal_Timer.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1692 bytes (5.2% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:56:38 Build Finished (took 2s.14ms)
+

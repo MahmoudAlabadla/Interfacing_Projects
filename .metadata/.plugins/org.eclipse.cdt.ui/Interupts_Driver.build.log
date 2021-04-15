@@ -1,0 +1,20 @@
+16:15:48 **** Incremental Build of configuration Debug for project Interupts_Driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Interupts_Driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1590 bytes (4.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+16:15:49 Build Finished (took 391ms)
+

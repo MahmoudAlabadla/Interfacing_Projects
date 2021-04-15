@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;4Bit_LCD/LCD_Int.h&apos; to &apos;LCD_Init.h&apos;" description="Rename resource &apos;LCD_Int.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="LCD_Int.h" name="LCD_Init.h" stamp="1612733118643" updateReferences="true"/>
+</session>

@@ -1,0 +1,20 @@
+22:24:42 **** Incremental Build of configuration Debug for project Seven_Segment_Display ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Seven_Segment_Display.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5112 bytes (15.6% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:24:42 Build Finished (took 252ms)
+

@@ -1,0 +1,20 @@
+22:52:54 **** Incremental Build of configuration Debug for project ECU_ONE ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ECU_ONE.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2000 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:53:06 Build Finished (took 12s.158ms)
+

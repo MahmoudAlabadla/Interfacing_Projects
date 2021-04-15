@@ -1,0 +1,20 @@
+14:14:09 **** Incremental Build of configuration Debug for project UART_Driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_Driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1694 bytes (5.2% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+14:14:10 Build Finished (took 532ms)
+

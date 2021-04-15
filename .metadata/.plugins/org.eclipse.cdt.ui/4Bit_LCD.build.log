@@ -1,0 +1,20 @@
+22:24:40 **** Incremental Build of configuration Debug for project 4Bit_LCD ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 4Bit_LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6964 bytes (21.3% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:24:40 Build Finished (took 373ms)
+

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ICU_Project/External_ICU_prog.c&apos; to &apos;T1_ICU_prog.c&apos;" description="Rename resource &apos;External_ICU_prog.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="External_ICU_prog.c" name="T1_ICU_prog.c" stamp="1613672928192" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ICU_Project/External_ICU_Init.h&apos; to &apos;T1_ICU_Init.h&apos;" description="Rename resource &apos;External_ICU_Init.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="External_ICU_Init.h" name="T1_ICU_Init.h" stamp="1613672961154" updateReferences="true"/>
+</session>

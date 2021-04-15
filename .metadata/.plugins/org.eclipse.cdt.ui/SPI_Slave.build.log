@@ -1,0 +1,53 @@
+01:53:33 **** Incremental Build of configuration Debug for project SPI_Slave ****
+make all 
+Building file: ../Dio_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Dio_Prog.d" -MT"Dio_Prog.o" -c -o "Dio_Prog.o" "../Dio_Prog.c"
+Finished building: ../Dio_Prog.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../SPI_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"SPI_Prog.d" -MT"SPI_Prog.o" -c -o "SPI_Prog.o" "../SPI_Prog.c"
+Finished building: ../SPI_Prog.c
+ 
+Building file: ../UART__Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"UART__Prog.d" -MT"UART__Prog.o" -c -o "UART__Prog.o" "../UART__Prog.c"
+Finished building: ../UART__Prog.c
+ 
+Building target: SPI_Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_Slave.map -mmcu=atmega32 -o "SPI_Slave.elf"  ./Dio_Prog.o ./LED.o ./SPI_Prog.o ./UART__Prog.o ./main.o   
+Finished building target: SPI_Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_Slave.elf  >"SPI_Slave.lss"
+Finished building: SPI_Slave.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SPI_Slave.elf  "SPI_Slave.hex"
+Finished building: SPI_Slave.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2066 bytes (6.3% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+01:53:37 Build Finished (took 4s.55ms)
+

@@ -1,0 +1,11 @@
+14:10:06 **** Incremental Build of configuration Debug for project UART_(M)SPI_Bluetooth ****
+make all 
+Building target: UART_(M)SPI_Bluetooth.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_(M)SPI_Bluetooth.map -mmcu=atmega32 -o "UART_(M)SPI_Bluetooth.elf"  ./Dio_Prog.o ./SPI_Prog.o ./UART__Prog.o ./main.o   
+/usr/bin/sh: -c: line 1: syntax error near unexpected token `-Wl,-Map,UART_(M'
+/usr/bin/sh: -c: line 1: `avr-gcc -Wl,-Map,UART_(M)SPI_Bluetooth.map -mmcu=atmega32 -o "UART_(M)SPI_Bluetooth.elf"  ./Dio_Prog.o ./SPI_Prog.o ./UART__Prog.o ./main.o   '
+make: *** [UART_(M)SPI_Bluetooth.elf] Error 258
+
+14:10:06 Build Finished (took 454ms)
+

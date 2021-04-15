@@ -1,0 +1,20 @@
+20:57:03 **** Incremental Build of configuration Debug for project FastMode_Non_Inverting_PWM ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FastMode_Non_Inverting_PWM.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5170 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+20:57:03 Build Finished (took 306ms)
+
